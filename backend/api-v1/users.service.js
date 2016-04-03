@@ -8,6 +8,10 @@ class UsersService {
     this.app = app;
   }
 
+  find(params) {
+    return User.find(params);
+  }
+
   get(id) {
     return Promise.resolve({ id });
   }
