@@ -1,0 +1,42 @@
+{
+  "name": "sssnap-core",
+  "version": "0.0.1",
+  "description": "sssnap's core server",
+  "main": "backend/startup.js",
+  "scripts": {
+    "start": "node backend/startup.js",
+    "dev": "nodemon --watch backend backend/startup.js",
+    "test": "npm run eslint",
+    "eslint": "eslint ./backend",
+    "ava": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/51seven/sssnap-core.git"
+  },
+  "contributors": [
+    "Timo Mämecke <timo@51seven.de> (https://twitter.com/timomeh)"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "feathers": "^2.0.0",
+    "feathers-hooks": "^1.5.1",
+    "feathers-rest": "^1.2.4",
+    "feathers-socketio": "^1.3.3",
+    "mongoose": "^4.4.10",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-google-token": "^0.1.2"
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "eslint": "^2.5.3",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-ava": "^1.4.1",
+    "eslint-plugin-react": "^4.2.3",
+    "nodemon": "^1.9.1",
+    "request": "^2.69.0"
+  }
+}
